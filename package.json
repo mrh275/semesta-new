@@ -2,6 +2,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:base": "tailwindcss -i ./src/css/base.css -o ./dist/css/base.css --watch",
+    "dev:components": "tailwindcss -i ./src/css/components.css -o ./dist/css/components.css --watch",
     "dev:buttons": "tailwindcss -i ./src/css/buttons.css -o ./dist/css/buttons.css --watch",
     "dev:typo": "tailwindcss -i ./src/css/typography.css -o ./dist/css/typography.css --watch"
   },
