@@ -1,0 +1,33 @@
+.navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  width: 100%;
+  background-color: transparent;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
+
+.navbar-brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start
+}
+
+.brand-img {
+  height: 4rem;
+  width: 4rem
+}
+
+.brand-text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity))
+}

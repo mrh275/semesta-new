@@ -1,0 +1,17 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar {
+        @apply absolute top-0 left-0 z-50 w-full px-10 py-6 bg-transparent;
+    }
+    .navbar-brand-container {
+        @apply flex items-center justify-start;
+    }
+    .brand-img {
+        @apply w-16 h-16;
+    }
+    .brand-text {
+        @apply mx-6 text-3xl font-bold text-gray-900;
+    }
+}
