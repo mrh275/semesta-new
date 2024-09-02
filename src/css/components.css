@@ -15,7 +15,7 @@
         @apply mx-6 text-3xl font-bold text-gray-900;
     }
     .navbar-menu-wrapper {
-        @apply px-6;
+        @apply flex items-center justify-between px-6;
     }
     .menu-items {
         @apply flex items-center justify-evenly;
@@ -31,5 +31,23 @@
     }
     .dropdown-item {
         @apply px-4 py-1 whitespace-nowrap;
+    }
+    .toggle-dark-mode-wrapper {
+        @apply relative flex items-center justify-center bg-gray-900 rounded-full cursor-pointer w-[28px] h-[28px] overflow-hidden;
+    }
+    .toggle-dark-mode {
+        @apply flex justify-center;
+    }
+    .light-mode {
+        @apply absolute translate-x-0 top-[7px] transition-all duration-200 ease-in-out text-yellow-500;
+    }
+    .toggle-dark-mode.active > .light-mode {
+        @apply -translate-x-[200%];
+    }
+    .dark-mode {
+        @apply absolute top-[7px] translate-x-[200%] transition-all duration-200 ease-in-out text-white;
+    }
+    .toggle-dark-mode.active > .dark-mode {
+        @apply translate-x-0;
     }
 }
