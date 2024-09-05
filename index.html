@@ -22,45 +22,48 @@
     <div class="main-wrapper">
         <!-- Navbar -->
         <nav class="navbar">
-            <div class="navbar-brand-container">
-                <img src="./src/img/logo-big.png" alt="Logo Sekolah" class="brand-img">
-                <a href="/" class="brand-text">SMA Negeri 1 Rawamerta</a>
-            </div>
-            <div class="navbar-menu-wrapper">
-                <ul class="menu-items">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Tentang</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item">
-                                <a href="/sejarah" class="nav-link">Sejarah</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="/struktur-organisasi" class="nav-link">Struktur Organisasi</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">PPDB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Kontak</a>
-                    </li>
-                </ul>
-                <div class="toggle-dark-mode-wrapper">
-                    <div class="toggle-dark-mode">
-                        <i class="fa-solid fa-sun light-mode"></i>
-                        <i class="fa-solid fa-moon dark-mode"></i>
+            <div class="navbar-wrapper">
+                <div class="navbar-brand-container">
+                    <img src="./src/img/logo-big.png" alt="Logo Sekolah" class="brand-img">
+                    <a href="/" class="brand-text">SMA Negeri 1 Rawamerta</a>
+                </div>
+                <div class="navbar-menu-wrapper">
+                    <ul class="menu-items">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Tentang</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="/sejarah" class="nav-link">Sejarah</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="/struktur-organisasi" class="nav-link">Struktur Organisasi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">PPDB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Kontak</a>
+                        </li>
+                    </ul>
+                    <div class="toggle-dark-mode-wrapper">
+                        <div class="toggle-dark-mode">
+                            <i class="fa-solid fa-sun light-mode"></i>
+                            <i class="fa-solid fa-moon dark-mode"></i>
+                        </div>
                     </div>
                 </div>
+            </div>
         </nav>
         <!-- End Navbar -->
 
@@ -110,6 +113,34 @@
             body.classList.toggle('dark');
         });
         // End Toggle Dark Mode
+
+        // Fixed Navbar on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            const navbarWrapper = document.querySelector('.navbar-wrapper');
+            const brandImg = document.querySelector('.brand-img');
+            const brandText = document.querySelector('.brand-text');
+            if (window.scrollY > 10) {
+                navbar.classList.add('fixed');
+                navbar.classList.add('pt-3');
+                navbarWrapper.classList.add('py-3');
+                navbarWrapper.classList.add('drop-shadow-lg');
+                navbarWrapper.classList.add('opacity-85');
+                brandImg.classList.add('w-10')
+                brandImg.classList.add('h-10')
+                brandText.classList.add('text-xl')
+            } else {
+                navbar.classList.remove('fixed');
+                navbar.classList.remove('pt-3');
+                navbarWrapper.classList.remove('py-3');
+                navbarWrapper.classList.remove('drop-shadow-lg');
+                navbarWrapper.classList.remove('opacity-85');
+                brandImg.classList.remove('w-10')
+                brandImg.classList.remove('h-10')
+                brandText.classList.remove('text-xl')
+            }
+        });
+        // End Fixed Navbar on Scroll
 
         // Image Carousel using Splide
         document.addEventListener('DOMContentLoaded', function () {
