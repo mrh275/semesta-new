@@ -190,3 +190,11 @@ body.dark .dropdown-menu {
 }
 
 /* End Hero Section */
+
+/* Greetings Section */
+
+.greeting-wrapper {
+  height: 100rem
+}
+
+/* End Greetings Section */

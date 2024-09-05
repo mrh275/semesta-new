@@ -74,4 +74,10 @@
         @apply w-full
     }
     /* End Hero Section */
+
+    /* Greetings Section */
+    .greeting-wrapper {
+        @apply h-[100rem]
+    }
+    /* End Greetings Section */
 }
