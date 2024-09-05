@@ -20,6 +20,7 @@
 
 <body>
     <div class="main-wrapper">
+        <!-- Navbar -->
         <nav class="navbar">
             <div class="navbar-brand-container">
                 <img src="./src/img/logo-big.png" alt="Logo Sekolah" class="brand-img">
@@ -61,6 +62,9 @@
                     </div>
                 </div>
         </nav>
+        <!-- End Navbar -->
+
+        <!-- Hero Section -->
         <div class="hero-section">
             <section class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
@@ -84,17 +88,30 @@
                 </div>
             </section>
         </div>
+        <!-- End Hero Section -->
+
+        <!-- Greetings Section -->
+        <div class="greeting-wrapper">
+            <h1 class="greeting-text">Selamat Datang di Website Resmi SMA Negeri 1 Rawamerta</h1>
+            <p class="greeting-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quidem ea dignissimos consequatur eveniet, natus quos provident sit ratione rem id aut architecto necessitatibus assumenda suscipit excepturi numquam modi nostrum explicabo, officia aliquid. Labore, eius quos itaque excepturi harum quidem possimus minus repudiandae. Distinctio, commodi impedit molestiae tempore ipsa tenetur incidunt ut natus ducimus reprehenderit earum amet eveniet eligendi quis magni sequi laboriosam ullam. Nihil perspiciatis ipsam ea consectetur facilis nobis dicta repellendus sed, inventore impedit doloremque reprehenderit odio consequuntur, totam fugiat saepe adipisci quam minima eum. Debitis fuga deserunt, natus sed enim a quam, tenetur libero facilis, inventore quos.
+            </p>
+        </div>
+        <!-- End Greetings Section -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <script>
+        // Toggle Dark Mode
         const toggleDarkMode = document.querySelector('.toggle-dark-mode');
         const body = document.querySelector('body');
         toggleDarkMode.addEventListener('click', () => {
             toggleDarkMode.classList.toggle('active');
             body.classList.toggle('dark');
         });
+        // End Toggle Dark Mode
 
+        // Image Carousel using Splide
         document.addEventListener('DOMContentLoaded', function () {
             var splide = new Splide('.splide', {
                 type: 'slide',
@@ -106,6 +123,9 @@
             });
             splide.mount();
         });
+        // End Image Carousel using Splide
+
+
     </script>
 </body>
 
