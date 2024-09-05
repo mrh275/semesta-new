@@ -169,3 +169,24 @@ body.dark .dropdown-menu {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity))
 }
+
+/* Hero Section */
+
+.hero-section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow: hidden;
+  border-radius: 1rem
+}
+
+.hero-section li {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.hero-img {
+  width: 100%
+}
+
+/* End Hero Section */

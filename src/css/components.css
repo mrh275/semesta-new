@@ -62,4 +62,16 @@
     body.dark .dropdown-menu {
         @apply bg-gray-700;
     }
+
+    /* Hero Section */
+    .hero-section {
+        @apply mx-4 overflow-hidden rounded-2xl;
+    }
+    .hero-section li {
+        @apply flex items-center justify-center;
+    }
+    .hero-img {
+        @apply w-full
+    }
+    /* End Hero Section */
 }
