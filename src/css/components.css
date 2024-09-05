@@ -6,16 +6,19 @@
         @apply text-gray-900 transition-all duration-200 ease-in-out;
     }
     .navbar {
-        @apply relative z-50 flex items-center justify-between w-full px-10 py-6 bg-transparent;
+        @apply fixed top-0 z-50 w-full px-6 pt-6 transition-all duration-200 ease-in-out;
+    }
+    .navbar-wrapper {
+        @apply flex items-center justify-between w-full px-10 pb-6 transition-all duration-200 ease-in-out bg-white rounded-lg;
     }
     .navbar-brand-container {
         @apply flex items-center justify-start;
     }
     .brand-img {
-        @apply w-16 h-16;
+        @apply w-16 h-16 transition-all duration-200 ease-in-out;
     }
     .brand-text {
-        @apply mx-6 text-3xl font-bold;
+        @apply mx-6 text-3xl font-bold transition-all duration-200 ease-in-out;
     }
     .navbar-menu-wrapper {
         @apply flex items-center justify-between px-6;
@@ -65,7 +68,7 @@
 
     /* Hero Section */
     .hero-section {
-        @apply mx-4 overflow-hidden rounded-2xl;
+        @apply mx-6 overflow-hidden rounded-2xl mt-[112px];
     }
     .hero-section li {
         @apply flex items-center justify-center;
@@ -77,7 +80,7 @@
 
     /* Greetings Section */
     .greeting-wrapper {
-        @apply h-[100rem]
+        @apply h-[100rem] mx-12 text-justify my-8;
     }
     /* End Greetings Section */
 }

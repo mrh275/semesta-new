@@ -7,17 +7,32 @@ body {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0px;
   z-index: 50;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.navbar-wrapper {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem
+  padding-bottom: 1.5rem;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .navbar-brand-container {
@@ -28,7 +43,10 @@ body {
 
 .brand-img {
   height: 4rem;
-  width: 4rem
+  width: 4rem;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .brand-text {
@@ -36,7 +54,10 @@ body {
   margin-right: 1.5rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  font-weight: 700
+  font-weight: 700;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .navbar-menu-wrapper {
@@ -173,8 +194,9 @@ body.dark .dropdown-menu {
 /* Hero Section */
 
 .hero-section {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 112px;
   overflow: hidden;
   border-radius: 1rem
 }
@@ -194,7 +216,47 @@ body.dark .dropdown-menu {
 /* Greetings Section */
 
 .greeting-wrapper {
-  height: 100rem
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 100rem;
+  text-align: justify
 }
 
 /* End Greetings Section */
+
+.fixed {
+  position: fixed
+}
+
+.h-10 {
+  height: 2.5rem
+}
+
+.w-10 {
+  width: 2.5rem
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
+.pt-3 {
+  padding-top: 0.75rem
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.opacity-85 {
+  opacity: 0.85
+}
+
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
