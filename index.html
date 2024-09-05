@@ -11,6 +11,11 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Library -->
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </head>
 
 <body>
@@ -56,14 +61,50 @@
                     </div>
                 </div>
         </nav>
+        <div class="hero-section">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./src/img/img-1.webp" alt="" class="hero-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/img-2.webp" alt="" class="hero-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/img-3.webp" alt="" class="hero-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/img-4.webp" alt="" class="hero-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./src/img/img-5.webp" alt="" class="hero-img">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <script>
         const toggleDarkMode = document.querySelector('.toggle-dark-mode');
         const body = document.querySelector('body');
         toggleDarkMode.addEventListener('click', () => {
             toggleDarkMode.classList.toggle('active');
             body.classList.toggle('dark');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'slide',
+                rewind: true,
+                height: '34rem',
+                autoplay: false,
+                interval: 3000,
+                lazyLoad: 'nearby',
+            });
+            splide.mount();
         });
     </script>
 </body>
