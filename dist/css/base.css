@@ -594,6 +594,10 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .relative{
   position: relative;
 }
@@ -626,6 +630,10 @@ video {
   height: 24rem;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .\!w-12{
   width: 3rem !important;
 }
@@ -636,6 +644,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .\!-translate-y-8{
@@ -685,9 +697,32 @@ video {
   padding: 0.5rem !important;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.pt-\[112px\]{
+  padding-top: 112px;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -697,6 +732,24 @@ video {
 .text-indigo-600{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.opacity-75{
+  opacity: 0.75;
+}
+
+.opacity-85{
+  opacity: 0.85;
+}
+
+.drop-shadow-md{
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-lg{
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all{
