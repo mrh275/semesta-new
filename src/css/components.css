@@ -83,7 +83,22 @@
 
     /* Greetings Section */
     .greeting-wrapper {
-        @apply h-[100rem] mx-12 text-justify my-8;
+        @apply flex items-start justify-between px-8 py-8 mx-12 my-12 text-justify bg-gray-300 rounded-lg drop-shadow-lg;
+    }
+    .greeting-img-wrapper {
+        @apply w-2/12;
+    }
+    .greeting-img {
+        @apply w-[132px] mx-auto;
+    }
+    .greeting-img-title {
+        @apply mt-4 text-sm text-center;
+    }
+    .greeting-text-wrapper {
+        @apply w-10/12 pl-8;
+    }
+    .greeting-heading {
+        @apply mb-2 text-2xl font-bold;
     }
     /* End Greetings Section */
 }

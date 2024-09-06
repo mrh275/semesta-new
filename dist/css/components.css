@@ -223,10 +223,50 @@ body.dark .navbar-wrapper {
 .greeting-wrapper {
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  height: 100rem;
-  text-align: justify
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: justify;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.greeting-img-wrapper {
+  width: 16.666667%
+}
+
+.greeting-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 132px
+}
+
+.greeting-img-title {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.greeting-text-wrapper {
+  width: 83.333333%;
+  padding-left: 2rem
+}
+
+.greeting-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700
 }
 
 /* End Greetings Section */
