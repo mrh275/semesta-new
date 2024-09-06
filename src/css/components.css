@@ -101,4 +101,35 @@
         @apply mb-2 text-2xl font-bold;
     }
     /* End Greetings Section */
+
+    /* Content Section */
+    .content-wrapper {
+        @apply flex items-start justify-between mx-8 my-8;
+    }
+
+    /* Main Content */
+    .main-content {
+        @apply w-8/12 px-6 py-6 mr-3 bg-gray-300 rounded-lg drop-shadow-lg;
+    }
+    /* End Main Content */
+
+    /* Sidebar */
+    .sidebar {
+        @apply w-4/12 ml-3 overflow-hidden bg-gray-300 rounded-lg drop-shadow-lg;
+    }
+    .sidebar-head {
+        @apply px-6 py-4 text-white bg-blue-500;
+    }
+    .sidebar-title {
+        @apply text-xl font-bold;
+    }
+    .sidebar-body {
+        @apply px-6 py-4;
+    }
+    .sidebar-item {
+        @apply mb-2 text-lg;
+    }
+    /* End Sidebar */
+
+    /* End Content Section */
 }
